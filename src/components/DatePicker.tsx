@@ -1,9 +1,16 @@
-import React from 'react';
+import React from 'react'
 
-const DatePicker = () => {
-    return (
-        <div>Calendar</div>
-    );
+interface IDatePickerProps {
+  title: string
 }
 
-export default DatePicker;
+const DatePicker: React.FC<IDatePickerProps> = ({ title }) => {
+  return (
+    <>
+      <h1>{title}</h1>
+      <div>Calendar</div>
+    </>
+  )
+}
+
+export default DatePicker

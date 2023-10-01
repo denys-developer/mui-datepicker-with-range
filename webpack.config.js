@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     mode: "production",
-    entry: './src/index.js', // Change this to the path of your entry file
+    entry: './src/index.ts', // Change this to the path of your entry file
     output: {
         path: path.resolve(__dirname, 'dist'), // Change 'dist' to your desired output folder
         filename: 'index.js',
@@ -19,6 +19,6 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.ts', '.jsx', '.tsx'],
     },
 };
